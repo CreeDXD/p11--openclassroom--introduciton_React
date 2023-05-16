@@ -1,0 +1,13 @@
+.main{
+    margin-right:100px;
+    margin-left:100px;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    &__logo{
+        width: 210.32px;
+        height: 68px;
+    }
+}

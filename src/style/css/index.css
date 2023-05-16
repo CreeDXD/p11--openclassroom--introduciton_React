@@ -1,0 +1,15 @@
+.main {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 210.32px;
+  height: 68px;
+}
+
+/*# sourceMappingURL=index.css.map */
