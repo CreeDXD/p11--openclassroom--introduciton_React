@@ -1,15 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
 .main {
   margin-right: 100px;
   margin-left: 100px;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
-.header__logo {
+header img {
   width: 210.32px;
   height: 68px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+header nav a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-left: 30px;
+}
+
+footer {
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+footer img {
+  width: 122px;
+  height: 39.44px;
+}
+footer p {
+  color: #FFFFFF;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  margin-top: 50px;
+  margin-bottom: 31px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.banner img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+}
+.banner p {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=index.css.map */

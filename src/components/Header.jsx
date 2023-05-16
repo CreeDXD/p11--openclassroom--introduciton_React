@@ -4,13 +4,13 @@ import '../style/css/index.css'
  
 function Header() {
     return (
-        <div className='header'>
-            <img className="header__logo" src={logo} alt="logo" />
+        <header >
+            <img  src={logo} alt="logo" />
             <nav>
                 <Link to="/">Accueil</Link>
                 <Link to="/APropos">A Propos</Link>
             </nav>
-        </div>        
+        </header>        
     )
 }
 
