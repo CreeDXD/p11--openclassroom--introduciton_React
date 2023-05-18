@@ -19,8 +19,7 @@ header {
   padding-top: 20px;
 }
 header img {
-  width: 210.32px;
-  height: 68px;
+  width: 150px;
 }
 header nav {
   display: flex;
@@ -38,11 +37,11 @@ header nav a {
 }
 
 footer {
-  height: 209px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  height: 209px;
   background-color: black;
 }
 footer img {
@@ -75,6 +74,90 @@ footer p {
   font-size: 30px;
   font-weight: 500;
   color: #FFFFFF;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+.layout__padding {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  row-gap: 35px;
+  column-gap: 35px;
+}
+.layout__card {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.layout__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0) 10%, #000000 500%);
+  z-index: 2;
+}
+.layout__card img {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.layout__card p {
+  z-index: 3;
+  position: absolute;
+  width: 10%;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.carousel__pictures {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.carousel__arrow-Left {
+  position: absolute;
+  left: 20px;
+  z-index: 3;
+  align-self: center;
+}
+.carousel__arrow-Right {
+  position: absolute;
+  right: 20px;
+  z-index: 3;
+  align-self: center;
+}
+
+.collapse__button {
+  background-color: black;
 }
 
 /*# sourceMappingURL=index.css.map */

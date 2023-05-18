@@ -12,7 +12,7 @@ ReactDOM.render(
     <Router>      
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/FicheLogement" element={<FicheLogement />} />
+        <Route path="/FicheLogement/:id" element={<FicheLogement />} />
         <Route path="/PageErreur" element={<PageErreur />} />
         <Route path="/APropos" element={<APropos />} />
       </Routes>
