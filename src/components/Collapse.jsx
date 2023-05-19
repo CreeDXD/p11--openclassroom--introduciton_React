@@ -1,17 +1,23 @@
 import arrowDown from "../assets/arrowDown.png"
 import arrowUp from "../assets/arrowUp.png"
+import { useState } from "react"
 
-function Collapse({description}) {
-    
+function Collapse({element,name}) {
+
+const [isCollapsed, setIsCollapsed] = useState(false)
+
+const handleToggelCollapse = () =>{
+    setIsCollapsed(!isCollapsed)
+}
     return (
         <div className="collapse__main">
-            <div className="collapse__button">
-                <img src={arrowDown} alt="flèche vers le bas" />
-                <img src={arrowUp} alt="flèche vers le haut" />
+            <div className="collapse__main-button" onClick={handleToggelCollapse}>
+                <p>{name}</p>
+                <img src={isCollapsed ? arrowDown : arrowUp} alt={isCollapsed ? 'Expand' : 'Collapse'} />
             </div>
-            <p>{description}</p>
-        </div>
-        
+            {!isCollapsed && <div className="collapse__main-element"><p>{element}</p></div>}
+           
+        </div>        
     )
 }
 

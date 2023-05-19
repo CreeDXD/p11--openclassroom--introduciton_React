@@ -148,16 +148,114 @@ footer p {
   left: 20px;
   z-index: 3;
   align-self: center;
+  cursor: pointer;
 }
 .carousel__arrow-Right {
   position: absolute;
   right: 20px;
   z-index: 3;
   align-self: center;
+  cursor: pointer;
 }
 
-.collapse__button {
-  background-color: black;
+.titre {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.titre__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titre__info h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.titre__info p {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 18px;
+}
+.titre__profile {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.titre__profile p {
+  color: #FF6060;
+  width: 70px;
+}
+.titre__profile img {
+  width: 64px;
+  border-radius: 100px;
+}
+
+.tagsRating {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tagsRating .tagsRating__tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.tagsRating .tagsRating__tags li {
+  margin-right: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #FF6060;
+  border-radius: 25px;
+  color: #FFFFFF;
+}
+
+.collapse {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.collapse__main {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.collapse__main-element {
+  background-color: #F6F6F6;
+  color: #FF6060;
+  border-radius: 10px;
+  margin-top: -15px;
+  z-index: 1;
+}
+.collapse__main-element p {
+  padding: 10px;
+  padding-top: 30px;
+  line-height: 1.5em;
+}
+.collapse__main-element li {
+  list-style: none;
+}
+.collapse__main-button {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF6060;
+  border-radius: 10px;
+  z-index: 3;
+}
+.collapse__main-button p {
+  color: #FFFFFF;
+}
+.collapse__main-button img {
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=index.css.map */

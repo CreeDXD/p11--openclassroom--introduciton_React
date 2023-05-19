@@ -7,14 +7,14 @@ function Rating({rating}) {
 
     for(let i= 0; i < 5; i++){
         if(i < rating){
-            etoileAffiche.push(<img src={etoileOrange} alt="étoile orange" />)
+            etoileAffiche.push(<img key={i} src={etoileOrange} alt="étoile orange" />)
         }
         else{
-            etoileAffiche.push(<img src={etoileGrise} alt=" étoile grise" />)
+            etoileAffiche.push(<img key={i} src={etoileGrise} alt=" étoile grise" />)
         }
     }
     return (
-       <div className="rating">
+       <div  className="tagsRating__rating">
             {etoileAffiche}
        </div>
     )

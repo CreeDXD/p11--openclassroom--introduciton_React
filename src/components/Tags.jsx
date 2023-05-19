@@ -2,9 +2,7 @@
 
 function Tags({tag}) {
     return (
-        <li>
-            <p>{tag}</p>
-        </li>
+        <li>{tag}</li>
     )
 }
 

@@ -7,7 +7,6 @@ import Title from "../components/Title"
 import Profile from "../components/Profile"
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
-import CollapseListe from "../components/CollapseListe";
 import Rating from "../components/Rating"
 import '../style/css/index.css'
 
@@ -16,7 +15,10 @@ function FicheLogement() {
 
     const tab = kasaList.find((element) => element.id === id);
     
-    console.log(tab.title)
+    const tabEquipments = []
+    tab.equipments.forEach((equipment)=>{
+        tabEquipments.push(<li>{equipment}</li>)
+    })
     
     return (
         <div>
@@ -36,28 +38,30 @@ function FicheLogement() {
                     />
                 </div>
                 <div className="tagsRating">
-                    {tab.tags.map((tag,index) => (
-                        <ul key={index}>
-                            <Tags
-                                tag={tag}
-                            />
-                        </ul>                        
-                    ))}   
+                    <ul className="tagsRating__tags">
+                        {tab.tags.map((tag,index) => (
+                            <div key={index}  >
+                                <Tags
+                                    tag={tag}
+                                />
+                            </div>
+                        ))}   
+                    </ul>
+                    
                     <Rating
                         rating={tab.rating}
                     />                 
                 </div>
                 <div className="collapse">
                         <Collapse
-                            description={tab.description}
+                            element={tab.description}
+                            name="Description"
                         />
-                        <CollapseListe
-                            equipments={tab.equipments}
-                        />       
-                </div>
-
-                <p>{tab.equipments}</p>
-                
+                        <Collapse 
+                            element={tabEquipments}
+                            name="Équipements"
+                        />                             
+                </div>                
                
             </div>
             <Footer />

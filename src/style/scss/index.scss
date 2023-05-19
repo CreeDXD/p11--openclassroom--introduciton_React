@@ -163,19 +163,128 @@ footer{
         left:20px;   
         z-index: 3;
         align-self: center;
+        cursor: pointer;
     }
     
     &__arrow-Right{
         position: absolute;
         right:20px;
-        z-index: 3;  
-        align-self: center;
+        z-index: 3;
+        align-self: center;  
+        cursor: pointer;
+        
+    }
+}
+.titre{
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            font-size: 36px;
+            font-weight:500;
+            color: #FF6060;
+        }
+    
+        p{
+            color: #FF6060;
+            font-weight:500;
+            font-size: 18px;
+        }
+    }
+    &__profile{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: #FF6060;
+            width: 70px;
+        }
+        img{
+            width: 64px;
+            border-radius: 100px;
+        }
     }
 }
 
+.tagsRating{
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
 
+    .tagsRating__tags{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
 
-.collapse__button{
-    background-color: black;
+        li{
+            margin-right: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top:5px;
+            padding-bottom: 5px;
+            background-color: #FF6060;
+            border-radius: 25px;
+            color: #FFFFFF;
+        }
+    }
+
 }
 
+.collapse{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__main{
+        display: flex;
+        flex-direction: column;
+        width: 45%;    
+
+        &-element{
+            background-color: #F6F6F6;
+            color: #FF6060;
+            border-radius:10px; 
+            margin-top:-15px;
+            z-index: 1;
+
+            p{
+                padding:10px ;
+                padding-top:30px;
+                line-height: 1.5em;
+            }
+    
+            li{
+                list-style: none;
+            }
+        }
+        
+
+        &-button{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #FF6060;
+            border-radius: 10px;
+            z-index: 3;
+
+            p{
+                color: #FFFFFF;
+            }
+
+            img{
+                object-fit: contain;
+            }
+        }
+        
+    }
+    
+}

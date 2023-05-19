@@ -1,8 +1,4 @@
-
-
-function Profile({name,picture}) {
-    
-    
+function Profile({name,picture}) {   
     
     return (
         <div className="titre__profile">
