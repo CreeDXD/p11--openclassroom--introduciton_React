@@ -223,6 +223,12 @@ footer p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.collapse__apropos {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 30px;
+}
 .collapse__main {
   display: flex;
   flex-direction: column;
@@ -256,6 +262,33 @@ footer p {
 }
 .collapse__main-button img {
   object-fit: contain;
+}
+
+.erreur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+}
+.erreur h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 200px;
+}
+.erreur p {
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+.erreur a {
+  color: #FF6060;
+  margin-bottom: 100px;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 function Card({id,cover,title}) {
-    console.log(id)
+
     return (
         <Link to={`/FicheLogement/${id}`}>
             <div className="layout__card">                
