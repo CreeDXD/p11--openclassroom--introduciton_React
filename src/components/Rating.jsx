@@ -14,7 +14,7 @@ function Rating({rating}) {
         }
     }
     return (
-       <div  className="tagsRating__rating">
+       <div  className="profileRating__rating">
             {etoileAffiche}
        </div>
     )

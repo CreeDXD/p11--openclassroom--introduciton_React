@@ -1,3 +1,4 @@
+import React from "react"
 import { Link } from 'react-router-dom'
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -6,7 +7,7 @@ import "../style/css/index.css"
 
 function PageErreur() {
     return (       
-        <div>
+        <React.Fragment>
             <div className="main ">
                 <Header />
                 <div className='erreur'>
@@ -17,7 +18,7 @@ function PageErreur() {
                 
             </div>
             <Footer />
-        </div>
+        </React.Fragment>
     )
 }
 

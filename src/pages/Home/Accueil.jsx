@@ -1,3 +1,4 @@
+import React from 'react'
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import Banniere from "../../components/Banniere"
@@ -7,7 +8,7 @@ import '../../style/css/index.css'
 function Accueil() {
     const banniereTitle = <p>Chez vous, partout et ailleurs</p>
     return (
-        <div>
+        <React.Fragment>
             <div className="main">
                 <Header />
                 <Banniere 
@@ -17,7 +18,7 @@ function Accueil() {
                 <LayoutLocation />
             </div>
             <Footer />
-        </div>    
+        </React.Fragment>    
     )
 }
 

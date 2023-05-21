@@ -1,3 +1,4 @@
+import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Banniere from "../components/Banniere"
@@ -8,15 +9,15 @@ import aProposListe from "../data/aProposListe.json"
 function APropos() {
     
     return (
-        <div>
+        <React.Fragment>
             <div className="main">
                 <Header />
                 <Banniere 
                     img={banniere_APropos}
                 />
                 <div className="apropos">
-                    {aProposListe.map((element) => (
-                        <div className="collapse__apropos">
+                    {aProposListe.map((element,index) => (
+                        <div key={index} className="collapse__apropos">
                             <Collapse
                                 element={element.description}
                                 name={element.title}
@@ -27,7 +28,7 @@ function APropos() {
                                    
             </div>
             <Footer />
-        </div>   
+        </React.Fragment>   
     )
 }
 
