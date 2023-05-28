@@ -22,6 +22,10 @@
   margin-left: 100px;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -143,7 +147,7 @@ footer p {
   display: flex;
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;
@@ -318,7 +322,7 @@ footer p {
   align-items: center;
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .main {
     margin-right: 10px;
     margin-left: 10px;
@@ -329,6 +333,9 @@ footer p {
   }
   header img {
     width: 100px;
+  }
+  .banner {
+    height: 123px;
   }
   .layout {
     background-color: transparent;

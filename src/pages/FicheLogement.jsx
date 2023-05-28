@@ -1,6 +1,5 @@
 import React from "react"
 import { useParams } from "react-router-dom";
-import PageErreur from "./PageErreur"
 import kasaList from "../data/kasaList"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -11,6 +10,7 @@ import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 import Rating from "../components/Rating"
 import '../style/css/index.css'
+import { Navigate } from 'react-router-dom'
 
 function FicheLogement() {
     const { id } = useParams();
@@ -21,7 +21,7 @@ function FicheLogement() {
 //else display page Logement
     if(tab === undefined)
     {
-        return <PageErreur/>
+        return <Navigate to="/Error"/>
     }
     else
     {
