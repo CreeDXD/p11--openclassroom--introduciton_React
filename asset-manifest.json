@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/p11--openclassroom--introduciton_React/static/css/main.45cfcd7a.css",
+    "main.js": "/p11--openclassroom--introduciton_React/static/js/main.b2d6767a.js",
+    "static/media/banniere_APropos.png": "/p11--openclassroom--introduciton_React/static/media/banniere_APropos.388a325a41a4341c7ba0.png",
+    "static/media/banniere_accueil.png": "/p11--openclassroom--introduciton_React/static/media/banniere_accueil.7b295fcb71808167cd75.png",
+    "index.html": "/p11--openclassroom--introduciton_React/index.html",
+    "main.45cfcd7a.css.map": "/p11--openclassroom--introduciton_React/static/css/main.45cfcd7a.css.map",
+    "main.b2d6767a.js.map": "/p11--openclassroom--introduciton_React/static/js/main.b2d6767a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45cfcd7a.css",
+    "static/js/main.b2d6767a.js"
+  ]
+}
