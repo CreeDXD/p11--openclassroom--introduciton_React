@@ -10,7 +10,7 @@ const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(
   <React.StrictMode>
-    <Router>      
+    <Router basename="/p11--openclassroom--introduciton_React">      
       <Routes>
         <Route exact path="/" element={<Accueil />} />
         <Route path="/FicheLogement/:id" element={<FicheLogement />} />
